@@ -1,0 +1,58 @@
+:root {
+    --dgry: hsl(0, 0%, 18%);
+    --wht: hsl(0, 0%, 90%);
+    --blu: rgb(0, 49, 156);
+    --red: hsl(0, 96%, 42%);
+    --bg: var(--dgry);
+    --font: var(--wht);
+}
+
+.lightMode {
+    --bg: var(--wht);
+    --font: var(--dgry);
+}
+
+body {
+    background-color: var(--bg);
+    color: var(--font);
+    font-family: sans-serif;
+}
+
+/*//////////////////////////
+    Nav bar
+///////////////////////////////////////////////*/
+
+    nav {
+        top: 0;
+        left: 0;
+        height: 5rem;
+        background-color: var(--blu);
+        color: var(--wht);
+    }
+
+    nav h1 {
+        position: relative;
+        top: -4.75rem;
+        margin-left: 4.5rem;
+        color: var(--red);
+    }
+
+    nav ul {
+        position: absolute;
+        right: 1rem;
+        top: 0.25rem;
+        width: 5rem;
+    }
+
+    ul li {
+        cursor: pointer;
+        list-style: none;
+        margin-bottom: 1rem;
+    }
+
+    nav img {
+        position: relative;
+        padding: 0;
+        width: 4rem;
+        height: inherit;
+    }

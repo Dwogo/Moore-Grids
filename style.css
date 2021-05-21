@@ -20,6 +20,7 @@ body {
     background-color: var(--bg);
     color: var(--font);
     font-family: sans-serif;
+    margin: 0;
 }
 
 /*//////////////////////////
@@ -70,17 +71,20 @@ body {
         left: 50%;
         top: 1.5rem;
         transform: translateX(-50%);
-        height: 70rem;
+        height: calc(100% + 2rem);
         width: 95%;
         background-color: var(--font);
     }
 
-    .gday {
+    .forum {
         top: 1rem;
+    }
+
+    .gday {
         left: 50%;
         transform: translateX(-50%);
         height: 3rem;
-        width: clamp(20rem, 98%, 100rem);
+        width: clamp(15rem, 98%, 100rem);
         border-radius: 10px;
         background-color: var(--bg);
         text-align: center;
@@ -89,18 +93,127 @@ body {
     }
 
     .gday h1 {
-        position: relative;
         bottom: 1rem;
         color: var(--font);
     }
 
     .fm-recent {
-        position: relative;
         background-color: var(--bg);
-        height: 1rem;
-        width: 1rem;
+        top: 1rem;
+        left: 50%;
+        transform: translateX(-50%);
+        width: clamp(15rem, 98%, 100rem);
+        border-radius: 10px;
     }
 
-    @media (min-width: 420px) {
-        
+    .fm-recent div {
+        width: 100%;
+        border-bottom: 1px solid var(--font);
+    }
+
+    .fm-recent div h1 {
+        left: 0.3rem;
+        font-size: 18px;
+    }
+
+    .tp-fm-boi {
+        top: 0.2rem;
+    }
+
+    .fm-boi {
+        top: -0.5rem;
+    }
+
+    .fm-recent div p {
+        top: -0.6rem;
+        left: 0.3rem;
+        font-size: 14px;
+    }
+
+/*//////////////////////////
+    Events
+////////////////////////////////////////////////////*/
+
+    .events {
+        top: 2rem;
+        height: 50rem;
+    }
+
+    .next {
+        top: 0rem;
+        border-radius: 10px;
+        left: 50%;
+        transform: translateX(-50%);
+        background-color: var(--bg);
+        width: clamp(10rem, 98%, 100rem);
+        height: 10rem;
+    }
+
+    .next h1 {
+        top: 0.6rem;
+        text-align: center;
+        border-bottom: 1px solid var(--font);
+    }
+
+    .last {
+        border-radius: 10px;
+        top: 0.25rem;
+        left: 50%;
+        transform: translateX(-50%);
+        background-color: var(--bg);
+        width: clamp(10em, 98%, 100rem);
+        height: clamp(20rem, 70%, 50rem);
+    }
+
+    .last h1 {
+        top: 0.6rem;
+        text-align: center;
+        border-bottom: 1px solid var(--font);
+    }
+
+    .pics {
+        width: 100%;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    .pics div {
+        margin-top: 0.3rem;
+        left: 50%;
+        transform: translateX(-50%);
+        border-radius: 10px;
+        width: 95%;
+        height: 7.5rem;
+        background-color: violet;
+        border: 2px solid var(--font);
+    }
+
+    .pic1 { grid-area: pic1;}
+    .pic2 { grid-area: pic2;}
+    .pic3 { grid-area: pic3;}
+    .pic4 { grid-area: pic4;}
+
+    @media (min-width: 680px) {
+
+        .container {
+            display: flex;
+            flex-direction: row;
+        }
+
+        .forum {
+            width: 70%;
+        }
+
+        .events {
+            top: 0rem;
+            width: 30%;
+        }
+
+        .last {
+            height: clamp(20rem, 60%, 50rem);
+        }
+
+        .pics div {
+            height: 6rem;
+        }
     }

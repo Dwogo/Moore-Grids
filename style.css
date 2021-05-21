@@ -7,6 +7,10 @@
     --font: var(--wht);
 }
 
+* {
+    position: relative;
+}
+
 .lightMode {
     --bg: var(--wht);
     --font: var(--dgry);
@@ -23,15 +27,15 @@ body {
 ///////////////////////////////////////////////*/
 
     nav {
+        border-radius: 10px;
         top: 0;
         left: 0;
-        height: 5rem;
+        height: 4.5rem;
         background-color: var(--blu);
         color: var(--wht);
     }
 
     nav h1 {
-        position: relative;
         top: -4.75rem;
         margin-left: 4.5rem;
         color: var(--red);
@@ -40,7 +44,7 @@ body {
     nav ul {
         position: absolute;
         right: 1rem;
-        top: 0.25rem;
+        top: -0.25rem;
         width: 5rem;
     }
 
@@ -51,8 +55,52 @@ body {
     }
 
     nav img {
-        position: relative;
         padding: 0;
         width: 4rem;
         height: inherit;
+        border-radius: 10px;
+    }
+
+/*////////////////////////
+    Forum
+////////////////////////////////////////////////*/
+
+    .container {
+        border-radius: 10px;
+        left: 50%;
+        top: 1.5rem;
+        transform: translateX(-50%);
+        height: 70rem;
+        width: 95%;
+        background-color: var(--font);
+    }
+
+    .gday {
+        top: 1rem;
+        left: 50%;
+        transform: translateX(-50%);
+        height: 3rem;
+        width: clamp(20rem, 98%, 100rem);
+        border-radius: 10px;
+        background-color: var(--bg);
+        text-align: center;
+        padding-top: 1rem;
+        text-decoration: none;
+    }
+
+    .gday h1 {
+        position: relative;
+        bottom: 1rem;
+        color: var(--font);
+    }
+
+    .fm-recent {
+        position: relative;
+        background-color: var(--bg);
+        height: 1rem;
+        width: 1rem;
+    }
+
+    @media (min-width: 420px) {
+        
     }

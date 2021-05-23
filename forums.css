@@ -49,15 +49,32 @@ body {
         width: 5rem;
     }
 
-    ul li {
-        cursor: pointer;
-        list-style: none;
-        margin-bottom: 1rem;
+    nav ul {
+        width: auto;
+        font-size: 1rem;
+        margin-right: 0.5rem;
+        top: -1rem;
+        text-align: right;
     }
 
-    nav img {
-        padding: 0;
-        width: 4rem;
-        height: inherit;
-        border-radius: 10px;
+    nav li {
+        cursor: pointer;
+        list-style: none;
+        margin-top: 0.5rem;
     }
+
+
+@media (min-width: 750px) {
+    
+    nav ul {
+        margin-right: 0.25rem;
+        top: 0.7rem;
+        text-align: right;
+    }
+    
+    nav li {
+        margin-right: 0.5rem;
+        display: inline;
+        list-style: none;
+    }
+}

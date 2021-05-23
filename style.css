@@ -51,9 +51,16 @@ body {
         border-radius: 10px;
     }
 
-    .links li {
-        display: inline-block;
+    nav ul {
+        font-size: 1rem;
+        margin-right: 0.5rem;
+        top: -9rem;
+        text-align: right;
+    }
+
+    nav li {
         list-style: none;
+        margin-top: 0.5rem;
     }
 
 /*////////////////////////
@@ -189,26 +196,37 @@ body {
     }
 
     @media (min-width: 750px) {
-
-        .container {
-            display: flex;
-            flex-direction: row;
-        }
-
-        .forum {
-            width: 70%;
-        }
-
-        .events {
-            top: 0rem;
-            width: 30%;
-        }
-
-        .last {
-            height: clamp(20rem, 60%, 50rem);
-        }
-
-        .pics div {
-            height: 6rem;
-        }
+    
+    nav ul {
+        margin-right: 0.5rem;
+        top: -7.3rem;
+        text-align: right;
     }
+
+    nav li {
+        display: inline;
+        list-style: none;
+    }
+
+    .container {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .forum {
+        width: 70%;
+    }
+
+    .events {
+        top: 0rem;
+        width: 30%;
+    }
+
+    .last {
+        height: clamp(20rem, 60%, 50rem);
+    }
+
+    .pics div {
+        height: 6rem;
+    }
+}

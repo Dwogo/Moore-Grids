@@ -6,9 +6,9 @@ var time = timeOf.getHours();
 
 if (time >= 0 && time < 12) {
     gday.innerText = "Good Morning";
-} else if (time >= 12 && time < 16) {
+} else if (time >= 12 && time < 18) {
     gday.innerText = "Good Afternoon";
-} else if (time >= 16 && time <= 23) {
+} else if (time >= 18 && time <= 23) {
     gday.innerText = "Good Evening";
 }
 

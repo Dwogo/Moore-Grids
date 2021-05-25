@@ -2,6 +2,7 @@
     --dgry: hsl(0, 0%, 18%);
     --wht: hsl(0, 0%, 90%);
     --blu: rgb(0, 49, 156);
+    --hvrblu: hsl(221, 100%, 20%);
     --red: hsl(0, 96%, 42%);
     --bg: var(--dgry);
     --font: var(--wht);
@@ -71,9 +72,15 @@ body {
     }
 
     nav li {
+        border-radius: 10px;
         cursor: pointer;
         list-style: none;
         margin-bottom: 0.5rem;
+        padding: 0.25rem;
+    }
+
+    nav li:hover {
+        background-color: var(--hvrblu);
     }
 
 

@@ -1,7 +1,8 @@
 :root {
     --dgry: hsl(0, 0%, 18%);
     --wht: hsl(0, 0%, 90%);
-    --blu: rgb(0, 49, 156);
+    --blu: hsl(221, 100%, 31%);
+    --hvrblu: hsl(221, 100%, 20%);
     --red: hsl(0, 96%, 42%);
     --bg: var(--dgry);
     --font: var(--wht);
@@ -59,9 +60,15 @@ body {
     }
 
     nav li {
+        padding: 0.25rem;
+        border-radius: 10px;
         cursor: pointer;
         list-style: none;
         margin-top: 0.5rem;
+    }
+
+    nav li:hover {
+        background-color: var(--hvrblu);
     }
 
 /*////////////////////////
@@ -90,6 +97,7 @@ body {
         border-radius: 10px;
         background-color: var(--bg);
         text-align: center;
+        font-size: 0.75rem;
         padding-top: 1rem;
         margin-bottom: 0.25rem;
     }

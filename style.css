@@ -60,11 +60,11 @@ body {
     }
 
     nav li {
+        margin-bottom: -0.25rem;
         padding: 0.25rem;
         border-radius: 10px;
         cursor: pointer;
         list-style: none;
-        margin-top: 0.5rem;
     }
 
     nav li:hover {
